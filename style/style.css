@@ -1,0 +1,101 @@
+body{ 
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	/*background: #f3f3f3;*/
+	height: 4000px;
+}
+h1, h2, h3, h4, h5, h6{
+	text-align: center;
+}
+.menu{
+	position: fixed;
+	width: 100%;
+	height: 75px;
+	z-index: 1000;
+	transition: .5s;
+}
+.menu-background{
+	background-color: white;
+	box-shadow: 0 0 8px rgba(0,0,0,0.4)
+}
+.menu > div {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-weight: bold;
+}
+.line {
+	height: 2px;
+    width: 100%;
+    background: #3fb39500;
+    transition: .3s;
+}
+.menu > div > div{
+	cursor:pointer;
+}
+.menu > div > div:hover .line {
+	background: #3fb395;
+}
+.hero{
+	width:100%;
+	height: 100vh;
+	background-image: url(../gallery/parusnik.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero h1 {
+	font-weight: 800;
+}
+.hero > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(to right, #ffffff00, #ffffffcf);
+	width: 100%;
+	height: 100vh;
+}
+.header {
+	margin: 0 0 0 50%;
+}
+.header, .application, .application form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+form div {
+	margin-bottom: 20px;
+}
+.header > div:first-child {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.header > div p,.header > div h1,.header > div h3 {
+	text-align: center;
+}
+button{
+	font-family: 'Montserrat', sans-serif;
+	border: 2px solid #3fb395;
+    background-color: #3fb395;
+    color: white;
+	font-size: 16px;
+    font-weight: 700;
+    padding: 5px 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover{
+	color: #3fb395;
+	background-color: #3fb39500;
+}
