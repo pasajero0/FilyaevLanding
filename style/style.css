@@ -1,12 +1,42 @@
+/*-------------------------------------------------------------------- ОСНОВНЫЕ ЭЛЕМЕНТЫ*/
 body{ 
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
 	/*background: #f3f3f3;*/
-	height: 4000px;
 }
 h1, h2, h3, h4, h5, h6{
+	margin: 20px 0;
 	text-align: center;
 }
+i{
+	color: #36d999;
+}
+.fa-phone {
+	transform: rotate(90deg);
+}
+section > div{
+	padding: 30px 0;
+	margin: 0 100px;
+}
+.link-button{
+	font-family: 'Montserrat', sans-serif;
+	border: 2px solid #36d999;
+    background-color: #36d999;
+    color: white;
+    text-decoration: none;
+	font-size: 16px;
+    font-weight: 700;
+    padding: 10px 70px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0px 0px 3px 0px #00000075
+}
+.link-button:hover{
+	color: #36d999;
+	background-color: #3fb39500;
+}
+/*-------------------------------------------------------------------- МЕНЮ*/
 .menu{
 	position: fixed;
 	width: 100%;
@@ -28,30 +58,30 @@ h1, h2, h3, h4, h5, h6{
 	margin-right: 50px;
 	font-weight: bold;
 }
-.line {
-	height: 2px;
-    width: 100%;
-    background: #3fb39500;
-    transition: .3s;
+.menu a {
+	text-decoration: none;
+	color: black;
 }
-.menu > div > div{
-	cursor:pointer;
+.menu > div > div {
+	border-bottom: 2px solid #3fb39500;
+	transition: .3s;
 }
-.menu > div > div:hover .line {
-	background: #3fb395;
+.menu > div > div:hover{
+	border-bottom: 2px solid #36d999;
 }
-.hero{
+/*-------------------------------------------------------------------- ЗАГЛАВНАЯ СЕКЦИЯ*/
+.hero-section{
 	width:100%;
 	height: 100vh;
-	background-image: url(../gallery/parusnik.jpg);
+	background-image: url(../gallery/DSC_9383.jpg);
 	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.hero h1 {
+.hero-section h1 {
 	font-weight: 800;
 }
-.hero > div {
+.hero-section > section {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -63,14 +93,12 @@ h1, h2, h3, h4, h5, h6{
 .header {
 	margin: 0 0 0 50%;
 }
-.header, .application, .application form{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+.header h3 {
+	margin: 10px 0 ;
 }
-form div {
-	margin-bottom: 20px;
+.header p {
+	font-weight: 600;
+	margin: 10px 0 ;
 }
 .header > div:first-child {
 	width: 100%;
@@ -82,20 +110,249 @@ form div {
 .header > div p,.header > div h1,.header > div h3 {
 	text-align: center;
 }
-button{
-	font-family: 'Montserrat', sans-serif;
-	border: 2px solid #3fb395;
-    background-color: #3fb395;
-    color: white;
-	font-size: 16px;
-    font-weight: 700;
-    padding: 5px 50px;
-    border-radius: 50px;
-    cursor: pointer;
+/*-------------------------------------------------------------------- СЕКЦИЯ "ЧТО ВЫ ПОЛУЧИТЕ?"*/
+.what-would-you-get-section ul { 
+	list-style: none;
+}
+.what-would-you-get-section li {
+	text-align: justify;
+	font-size: 20px;
+	font-weight: 600;
+	position: relative;
+	margin-bottom: 10px;
+}
+.what-would-you-get-section li i {
+	text-shadow: 0 0 .3px black;
+	left: -2.3em;
+	font-size: 20px;
+  	position: absolute;
+  	text-align: center;
+}
+/*-------------------------------------------------------------------- СЕКЦИЯ ЗАЯВКИ "Открой себя. Узнай себя. Поменяй себя легко"*/
+.header, .application-section, .application-section div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.application-section {
+    background: #bceee8;
+}
+/*-------------------------------------------------------------------- СЕКЦИЯ "АВТОР И ВЕДУЩИЙ СЕМИНАРА"*/
+.autor-section{
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	/*background-image: url(../gallery/);*/
+}
+.autor-section > div > div{
+	width: 45%;
+    text-align: justify;
+}
+/*-------------------------------------------------------------------- СЕКЦИЯ "ВИДЕООТЗЫВЫ"*/
+.video-section {
+	background-color:#ededed;
+}
+.video-section > div > div > div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.video-section iframe {
+	border-radius: 5px;
+	margin: 0 10px 10px 0;
+}
+/*-------------------------------------------------------------------- СЕКЦИЯ "ПРОГРАММА"*/
+.program-section > div > div  {
+	display: flex; 
+	flex-direction: row;
+	margin: 0 0 30px 0;
+}
+.program-section > div > div:last-child {
+	display: flex;
+	justify-content: center;
+}
+.program-section__block h4 {
+	border-bottom: 2px solid #36d99800;
+	transition: .3s;
+}
+.program-section > div > div:hover h4 {
+	border-bottom: 2px solid #36d998;
+} 
+.program-section__block{
+	text-align: center;
+    min-width: 171px;
+    margin-top: 1.5%;
+	margin-right: 8%;
+}
+.program-section__list{
+	width: 80%;
+	text-align: justify;
+}
+.program-section__list li {
+	color: #36d998;
+}
+.program-section__list li span {
+	color: black;
+}
+/*-------------------------------------------------------------------- СЕКЦИЯ "ОБЫЧНЫЙ ПСИХОЛОГИЧЕСКИЙ СЕМИНАР И ШОУ МИХАИЛА ФИЛЯЕВА"*/
+.show-section {
+	background-color: #ebebeb;
+}
+.show-section > div > div > div:hover {
+	background-color: #e2f4eb;
+}
+.show-section h3 span{
+	border-bottom: 3px solid #36d998;
+}
+.show-section h3 {
+	height: 50px;
+	margin: 20px 0;
+}
+/*---------------------------СЕКЦИЯ "ОБЫЧНЫЙ ПСИХОЛОГИЧЕСКИЙ СЕМИНАР И ШОУ МИХАИЛА ФИЛЯЕВА"-+-СЕКЦИЯ "СТОИМОСТЬ"*/
+.show-section > div > div > div,.price-section > div > div > div{
+	background-color: white;
+	border-radius: 5px;
+    box-shadow: 0 0 3px grey;
+    padding: 35px 0;
+    margin: 10px 10px;
+    width: 45%;
     transition: .3s;
 }
-
-button:hover{
-	color: #3fb395;
-	background-color: #3fb39500;
+.flex-center{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.flex-center ul {
+	list-style: none;
+	margin: 0 40px;
+}
+.flex-center li {
+	margin: 20px 0;
+}
+.flex-center li{
+	position: relative;
+}
+.flex-center li i {
+	text-shadow: 0 0 .3px black;
+	left: -1.3em;
+	font-size: 20px;
+  	position: absolute;
+  	text-align: center;
+}
+.unactive, .unactive i {
+	color: gray;
+}
+/*-------------------------------------------------------------------- СЕКЦИЯ "КАК ПРОХОДЯТ НАШИ МЕРОПРИЯТИЯ" СЛАЙДЕР*/
+.slider-block {
+	/*background: gray;*/
+}
+.slider-block div {
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+	height: 600px;
+}
+.slider-block div img {
+	width: inherit;
+	/*height: inherit;*/
+}
+/*.slide-1{
+	background-image: url(../gallery/slides/DSC_0035.jpg);
+}
+.slide-2{
+	background-image: url(../gallery/slides/DSC_0040.jpg);
+}
+.slide-3{
+	background-image: url(../gallery/slides/DSC_0242.jpg);
+}
+.slide-4{
+	background-image: url(../gallery/slides/DSC_0287.jpg);
+}
+.slide-5{
+	background-image: url(../gallery/slides/DSC_1466 2.jpg);
+}
+.slide-6{
+	background-image: url(../gallery/slides/DSC_3670.jpg);
+}
+.slide-7{
+	background-image: url(../gallery/slides/DSC_3771.jpg);
+}
+.slide-8{
+	background-image: url(../gallery/slides/DSC_3784.jpg);
+}
+.slide-9{
+	background-image: url(../gallery/slides/DSC_4001.jpg);
+}
+.slide-10{
+	background-image: url(../gallery/slides/DSC_4559.jpg);
+}*/
+/*-------------------------------------------------------------------- СЕКЦИЯ "СТОИМОСТЬ"*/
+.price-section{
+	background-color: #f3f3f2;	
+}
+.price-section div > div > div > div {
+	display: flex;
+	justify-content: center;
+	margin: 40px 0 10px 0;
+}
+.price-section h4 {
+	text-decoration: line-through;
+}
+.price-section span {
+	border-bottom: 3px solid #36d998;
+}
+/*-------------------------------------------------------------------- СЕКЦИЯ "МЕСТО"*/
+.place-section > div > div > div {
+	width: 25%;
+	margin: 10px 10px;
+}
+.place-section > div > div > div:first-child{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.place-section img {
+	width: 400px;
+}
+.place-section h3  {
+	text-align: justify;
+}
+/*-------------------------------------------------------------------- ПОДВАЛ*/
+footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	padding-top: 30px;
+	width: 100%;
+	background-color: #45b295;
+}
+footer i {
+	color: white;
+}
+footer > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 40%;
+	height: 200px;
+	margin: 10px 60px 20px;
+}
+footer img {
+	width: 150px;
+	height: 150px;
+	margin-bottom: 10px;
+}
+footer h2 {
+	font-size: 20px;
 }
