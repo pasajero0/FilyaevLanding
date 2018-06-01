@@ -2,11 +2,17 @@
 body{ 
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
-	/*background: #f3f3f3;*/
+	color: #333333;
+}
+section>div>h1, section>div>h2, section>div>h3, section>div>h4, section>div>h5, section>div>h6{
+	margin:  20px 0 60px ;
 }
 h1, h2, h3, h4, h5, h6{
-	margin: 20px 0;
 	text-align: center;
+}
+h2 {
+	font-weight: 800;
+	font-size: 26px;
 }
 i{
 	color: #36d999;
@@ -15,7 +21,7 @@ i{
 	transform: rotate(90deg);
 }
 section > div{
-	padding: 30px 0;
+	padding: 60px 0;
 	margin: 0 100px;
 }
 .link-button{
@@ -24,13 +30,12 @@ section > div{
     background-color: #36d999;
     color: white;
     text-decoration: none;
-	font-size: 16px;
-    font-weight: 700;
+	font-size: 24px;
+    font-weight: 500;
     padding: 10px 70px;
     border-radius: 50px;
     cursor: pointer;
     transition: .3s;
-    box-shadow: 0px 0px 3px 0px #00000075
 }
 .link-button:hover{
 	color: #36d999;
@@ -60,7 +65,9 @@ section > div{
 }
 .menu a {
 	text-decoration: none;
-	color: black;
+	color: #333333;
+	font-size: 14px;
+	font-weight: 600; 
 }
 .menu > div > div {
 	border-bottom: 2px solid #3fb39500;
@@ -86,7 +93,7 @@ section > div{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: linear-gradient(to right, #ffffff00, #ffffffcf);
+	background: linear-gradient(to right, #ffffff00 40%, #fffffff0);
 	width: 100%;
 	height: 100vh;
 }
@@ -97,8 +104,7 @@ section > div{
 	margin: 10px 0 ;
 }
 .header p {
-	font-weight: 600;
-	margin: 10px 0 ;
+	margin: 20px 0 ;
 }
 .header > div:first-child {
 	width: 100%;
@@ -107,8 +113,33 @@ section > div{
 	justify-content: space-around;
 	align-items: center;
 }
+.header > div:first-child > p {
+	font-size: 22px;
+	font-weight: 600;
+}
+.header > div:nth-child(2)> p{
+	margin-bottom: 70px;
+	font-size: 18px;
+}
+.header > div:last-child> p{
+	font-size: 16px;
+	font-weight: 400;
+}
 .header > div p,.header > div h1,.header > div h3 {
 	text-align: center;
+}
+.header > div h1{
+	margin: 80px 0 10px;
+	font-size: 35px;
+	font-weight: 800;
+}
+.header > div h3{
+	font-size: 21px;
+	font-weight: 600;
+}
+.header .link-button{
+	margin: 60px 0 10px;
+	box-shadow: 0px 0px 20px 0px #333333ab;
 }
 /*-------------------------------------------------------------------- СЕКЦИЯ "ЧТО ВЫ ПОЛУЧИТЕ?"*/
 .what-would-you-get-section ul { 
@@ -117,12 +148,12 @@ section > div{
 .what-would-you-get-section li {
 	text-align: justify;
 	font-size: 20px;
-	font-weight: 600;
+	font-weight: 400;
 	position: relative;
 	margin-bottom: 10px;
 }
 .what-would-you-get-section li i {
-	text-shadow: 0 0 .3px black;
+	text-shadow: 0 0 0.5px #989898;
 	left: -2.3em;
 	font-size: 20px;
   	position: absolute;
@@ -143,11 +174,35 @@ section > div{
 	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-	/*background-image: url(../gallery/);*/
+	background-image: url(../gallery/DSC_9169.jpg);
 }
-.autor-section > div > div{
-	width: 45%;
+.autor-section h4 {
+	font-weight: 400;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.autor-section > div > p,.autor-section li span {
+	font-weight: 400;
+	font-size: 18px;
+}
+.autor-section > div > div > p {
+	font-weight: 600;
+	font-size: 18px;
+	margin: 45px 0 45px;
+}
+.autor-section > div > div:first-child{
     text-align: justify;
+    margin-bottom: 50px;
+}
+.autor-section ul {
+	width: 45%;
+}
+.autor-section li {
+	color: #36d999;
+	margin-bottom: 33px;
+}
+.autor-section li span {
+	color: #333333;
 }
 /*-------------------------------------------------------------------- СЕКЦИЯ "ВИДЕООТЗЫВЫ"*/
 .video-section {
@@ -161,7 +216,8 @@ section > div{
 }
 .video-section iframe {
 	border-radius: 5px;
-	margin: 0 10px 10px 0;
+	margin: 0 15px 15px 0;
+	box-shadow: 0 0 15px #444444;
 }
 /*-------------------------------------------------------------------- СЕКЦИЯ "ПРОГРАММА"*/
 .program-section > div > div  {
@@ -176,6 +232,8 @@ section > div{
 .program-section__block h4 {
 	border-bottom: 2px solid #36d99800;
 	transition: .3s;
+	font-weight: 700;
+	font-size: 22px;
 }
 .program-section > div > div:hover h4 {
 	border-bottom: 2px solid #36d998;
@@ -184,59 +242,81 @@ section > div{
 	text-align: center;
     min-width: 171px;
     margin-top: 1.5%;
-	margin-right: 8%;
+	margin-right: 13%;
 }
+.program-section__block p, .program-section__list p {
+	font-size: 14px;
+	font-weight: 300;
+	font-style: italic;
+}
+.program-section__list p {
+	margin: 50px 20px 30px;
+ }
 .program-section__list{
-	width: 80%;
+	width: 65%;
 	text-align: justify;
 }
 .program-section__list li {
 	color: #36d998;
+	margin-bottom: 25px;
 }
 .program-section__list li span {
-	color: black;
-}
+	color: #333333;
+} 
 /*-------------------------------------------------------------------- СЕКЦИЯ "ОБЫЧНЫЙ ПСИХОЛОГИЧЕСКИЙ СЕМИНАР И ШОУ МИХАИЛА ФИЛЯЕВА"*/
 .show-section {
 	background-color: #ebebeb;
 }
-.show-section > div > div > div:hover {
+.show-section > div > div > div:last-child {
 	background-color: #e2f4eb;
 }
-.show-section h3 span{
+.show-section h3 p{
 	border-bottom: 3px solid #36d998;
+	display: inline-flex;
+	justify-content: center;
+	line-height: 1.5;
+	margin-top: 0;
 }
 .show-section h3 {
+	font-size: 22px;
+	font-weight: 700;
 	height: 50px;
 	margin: 20px 0;
+}
+.show-section li {
+	font-weight: 400;
+	font-size: 18px;
+}
+.show-section > div > div > div {
+	height: 500px;
 }
 /*---------------------------СЕКЦИЯ "ОБЫЧНЫЙ ПСИХОЛОГИЧЕСКИЙ СЕМИНАР И ШОУ МИХАИЛА ФИЛЯЕВА"-+-СЕКЦИЯ "СТОИМОСТЬ"*/
 .show-section > div > div > div,.price-section > div > div > div{
 	background-color: white;
 	border-radius: 5px;
-    box-shadow: 0 0 3px grey;
+    box-shadow: 0px 0px 20px 0px #333333ab;
     padding: 35px 0;
-    margin: 10px 10px;
+    margin: 10px 13px;
     width: 45%;
     transition: .3s;
 }
-.flex-center{
+.flex-center-row{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 }
-.flex-center ul {
+.flex-center-row ul {
 	list-style: none;
 	margin: 0 40px;
 }
-.flex-center li {
+.flex-center-row li {
 	margin: 20px 0;
 }
-.flex-center li{
+.flex-center-row li{
 	position: relative;
 }
-.flex-center li i {
+.flex-center-row li i {
 	text-shadow: 0 0 .3px black;
 	left: -1.3em;
 	font-size: 20px;
@@ -303,16 +383,35 @@ section > div{
 	justify-content: center;
 	margin: 40px 0 10px 0;
 }
+.price-section h3 {
+	font-weight: 700;
+	font-size: 24px;
+}
+.price-section h3 {
+	margin-bottom: 5px;
+}
 .price-section h4 {
+	margin-top: 1px;
+	font-weight: 600;
+	font-size: 20px;
 	text-decoration: line-through;
 }
 .price-section span {
 	border-bottom: 3px solid #36d998;
 }
+.price-section .flex-center-row > div {
+	margin: 0 25px 0;
+	width: 36%;
+	box-shadow: none;
+}
+.price-section li {
+	font-size: 18px;
+	font-weight: 400;
+}
 /*-------------------------------------------------------------------- СЕКЦИЯ "МЕСТО"*/
 .place-section > div > div > div {
-	width: 25%;
-	margin: 10px 10px;
+	width: 35%;
+	margin: 10px 30px;
 }
 .place-section > div > div > div:first-child{
 	display: flex;
@@ -323,7 +422,13 @@ section > div{
 	width: 400px;
 }
 .place-section h3  {
+	font-weight: 700;
+	font-size: 24px;
 	text-align: justify;
+}
+.place-section p {
+	font-weight: 400;
+	font-size: 18px;
 }
 /*-------------------------------------------------------------------- ПОДВАЛ*/
 footer {
@@ -338,15 +443,24 @@ footer {
 }
 footer i {
 	color: white;
+	font-size: 24px;
 }
-footer > div {
+footer > div{
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	justify-content: space-around;
+	width: 20%;
+    margin: 10px 15% 30px;
+}
+footer > div:first-child {
 	justify-content: center;
-	width: 40%;
-	height: 200px;
-	margin: 10px 60px 20px;
+	align-items: center;
+}
+footer > div a {
+	text-decoration: none;
+	color: white;
+	font-weight: 400;
+	font-size: 18px;
 }
 footer img {
 	width: 150px;
@@ -354,5 +468,6 @@ footer img {
 	margin-bottom: 10px;
 }
 footer h2 {
-	font-size: 20px;
+	font-weight: 800;
+    font-size: 20px;
 }
