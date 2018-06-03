@@ -75,6 +75,62 @@ section > div{
 .menu > div > div:hover{
 	border-bottom: 2px solid #36d999;
 }
+/*-------------------------------------------------------------------------------mobMenu*/
+.mobMenu {
+	display: none;
+}
+.mobMenu i {
+	cursor: pointer;
+}
+.mobMenu a {
+	color: #333333;
+	text-decoration: none;
+}
+.mobMenu > div > div {
+	padding: 20px;
+    font-size: 30px;
+}
+#mobMenu{
+    border-radius: 5px;
+    transition: .3s;
+}
+#mobDropmenu {
+	width: 100%;
+	display: none;
+    position: absolute;
+    top: 60px;
+    background: linear-gradient(to bottom, #ffffff00, #ffffff 5%);
+    box-shadow: 0px 4px 5px rgba(0,0,0,0.4);
+}
+#mobDropmenu > div {
+	margin-bottom: 30px;
+}
+.dropmenu-background {
+	transition: 1s;
+	background-color: white !important;
+}
+.pushed{
+	color: #333333 !important;
+}
+@media (max-width: 1080px) {
+	.menu{
+		display: none;
+	}
+	.mobMenu {
+		display: block;
+		position: fixed;
+		z-index: 1000;
+		transition: .5s;
+		width: 100%;
+	}
+	.mobMenu > div {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
 /*-------------------------------------------------------------------- ЗАГЛАВНАЯ СЕКЦИЯ*/
 .hero-section{
 	width:100%;
@@ -290,12 +346,11 @@ section > div{
 	height: 50px;
 	margin: 20px 0;
 }
-.show-section li {
-	font-weight: 400;
-	font-size: 18px;
-}
 .show-section > div > div > div {
 	height: 500px;
+}
+.show-section > div > div > div:first-child li img {
+    top: 3px;
 }
 /*---------------------------СЕКЦИЯ "ОБЫЧНЫЙ ПСИХОЛОГИЧЕСКИЙ СЕМИНАР И ШОУ МИХАИЛА ФИЛЯЕВА"-+-СЕКЦИЯ "СТОИМОСТЬ"*/
 .show-section > div > div > div,.price-section > div > div > div{
@@ -322,13 +377,15 @@ section > div{
 }
 .flex-center-row li{
 	position: relative;
+	text-align: justify;
+	font-weight: 400;
+	font-size: 18px;
 }
-.flex-center-row li i {
-	text-shadow: 0 0 .3px black;
-	left: -1.3em;
-	font-size: 20px;
-  	position: absolute;
-  	text-align: center;
+.flex-center-row li img {
+	width: 35px;
+    position: absolute;
+    top: 0;
+    left: -2.5em;
 }
 .unactive, .unactive i {
 	color: gray;
@@ -341,13 +398,13 @@ section > div{
     align-items: center;
 }
 .slider-block {
-	width: 1000px;
+	width: 70vw;
 }
 .slider-block > div {
 	border-radius: 2px;
 }
 .slider-block  > div > div {
-	height: 500px;
+	height: 35vw;
 }
 .slider-block  > div > div > div {
 	/*background-position: center;*/
