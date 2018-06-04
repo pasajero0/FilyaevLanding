@@ -575,6 +575,12 @@ footer h2 {
 		    padding: 20px 100px;
 		    margin: 5px 0 5px;
 		}
+		.what-would-you-get-section li img {
+		    width: 40px;
+		    position: absolute;
+		    top: 0px;
+		    left: -2.5em;
+		}
 		.program-section h2 {
 			margin-bottom: 80px;
 		}
@@ -589,7 +595,7 @@ footer h2 {
 		     margin-right: 0; 
 		}
 		.program-section__list {
-		    width: 100%;
+		    width: 95%;
 		}
 		.program-section__list p {
 			text-align: center;
@@ -714,7 +720,7 @@ footer h2 {
 		}
 	}
 }
-@media (max-device-height: 768px) {
+@media (max-device-height: 750px) {
 	.hero-section {
 	    height: 1000px;
 	}
@@ -724,12 +730,18 @@ footer h2 {
 	.what-would-you-get-section li img {
 	    width: 40px;
 	    position: absolute;
-	    top: 0px;
+	    top: 3px;
 	    left: -2.5em;
 	}
 	.program-section > div > div {
 		display: block;
 	    margin: 0 0 160px 0;
+	}
+	.program-section__list {
+	    width: 95%;
+	}
+	.program-section__list p {
+		text-align: center;
 	}
 }
 @media (max-height: 750px) {
