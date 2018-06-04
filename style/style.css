@@ -38,7 +38,7 @@ section > div{
     transition: .3s;
 }
 .link-button:hover{
-	box-shadow: 0px 0px 20px 0px #333333ab;
+	box-shadow: 0px 0px 10px 0px #333333ab;
 }
 /*-------------------------------------------------------------------- МЕНЮ*/
 .menu{
@@ -87,8 +87,8 @@ section > div{
 	text-decoration: none;
 }
 .mobMenu > div > div {
-	padding: 40px;
-    font-size: 50px;
+    padding: 20px;
+    font-size: 30px;
 }
 #mobMenu{
     transition: .3s;
@@ -97,7 +97,7 @@ section > div{
 	width: 100%;
 	display: none;
     position: absolute;
-    top: 90px;
+    top: 55px;
     background: linear-gradient(to bottom, #ffffff00, #ffffff 5%);
     box-shadow: 0px 4px 5px rgba(0,0,0,0.4);
 }
@@ -301,6 +301,8 @@ section > div{
 	margin-bottom: 25px;
 }
 .program-section__list li span {
+	font-size: 16px;
+	font-weight: 400;
 	color: #333333;
 } 
 /*-------------------------------------------------------------------- СЕКЦИЯ "ОБЫЧНЫЙ ПСИХОЛОГИЧЕСКИЙ СЕМИНАР И ШОУ МИХАИЛА ФИЛЯЕВА"*/
@@ -590,13 +592,13 @@ footer h2 {
 			.header > div h3{
 				font-size: 26px;
 			}
-			.header .link-button{
-				font-size: 30px;
-				margin: 5px 0 5px;
+			.link-button {
+			    font-size: 40px;
+			    margin: 5px 0 5px;
 			}
 			.program-section > div > div {
 				display: block;
-			    margin: 0 0 30px 0;
+			    margin: 0 0 70px 0;
 			}
 			.program-section > div > div:hover h4 {
 				border-bottom: 2px solid #36d99800;
@@ -663,10 +665,6 @@ footer h2 {
 						section > div {
 						    margin: 0 10px;
 						}
-						.mobMenu > div > div {
-						    padding: 40px;
-						    font-size: 40px;
-						}
 						.slider-block {
 						    width: 100vw;
 						}
@@ -680,15 +678,16 @@ footer h2 {
 						    align-items: center;
 						}
 						@media (max-width: 655px) {
+							.what-would-you-get-section li img {
+							    width: 40px;
+							    top: 0px;
+							    left: -2.5em;
+							}
 							.slider-section > div {
 							    display: flex;
 							    flex-direction: column;
 							    justify-content: center;
 							    align-items: center;
-							}
-							.mobMenu > div > div {
-							    padding: 30px;
-							    font-size: 30px;
 							}
 							footer > div:last-child > div a {
 								font-size: 30px;
@@ -711,7 +710,6 @@ footer h2 {
 								}
 								@media (max-width: 490px) {
 									.mobMenu > div > div {
-									    padding: 25px;
 									    font-size: 20px;
 									}
 									@media (max-width: 400px) {
@@ -742,6 +740,12 @@ footer h2 {
 }
 
 @media (max-height: 800px) {
+	.hero-section {
+	    min-height: 1000px;
+	}
+	.hero-section > section {
+	    height: 1000px;
+	}
 	.header > div:nth-child(2){
 		margin: 3vh 0 3vh;
 	}
@@ -762,7 +766,7 @@ footer h2 {
 			.header {
 			    padding: 70px 0 10px !important;
 			}
-			@media (max-height: 470px) {
+/*			@media (max-height: 470px) {
 				.header p {
 					font-size: 14px;
 					margin: 5px 0;
@@ -785,7 +789,7 @@ footer h2 {
 						margin: 4px 0;
 					}
 				}
-			}
+			}*/
 		}
 	}
 }
