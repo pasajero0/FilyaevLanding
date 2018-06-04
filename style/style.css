@@ -269,19 +269,22 @@ section > div{
 	display: flex;
 	justify-content: center;
 }
-.program-section__block h4 {
+.program-section__block h4 span {
 	border-bottom: 2px solid #36d99800;
 	transition: .3s;
+}
+.program-section__block h4 {
 	font-weight: 700;
 	font-size: 22px;
 }
-.program-section > div > div:hover h4 {
+.program-section > div > div:hover h4 > span {
 	border-bottom: 2px solid #36d998;
 } 
 .program-section__block{
 	text-align: center;
     margin-top: 1.5%;
-	margin-right: 8%;
+	margin-right: 10vw;
+    min-width: 30%;
 }
 .program-section__block p, .program-section__list p {
 	font-size: 16px;
@@ -605,6 +608,9 @@ footer h2 {
 		}
 		.show-section > div > div > div {
 		    width: 80%;
+		}
+		.show-section > div > div > div > ul li {
+			height: auto;
 		}
 		.price-section .flex-center-row > div {
 		    margin: 0 25px 25px;
