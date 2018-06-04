@@ -87,50 +87,27 @@ section > div{
 	text-decoration: none;
 }
 .mobMenu > div > div {
-	padding: 20px;
-    font-size: 30px;
+	padding: 40px;
+    font-size: 50px;
 }
 #mobMenu{
-    border-radius: 5px;
     transition: .3s;
 }
 #mobDropmenu {
 	width: 100%;
 	display: none;
     position: absolute;
-    top: 60px;
+    top: 90px;
     background: linear-gradient(to bottom, #ffffff00, #ffffff 5%);
     box-shadow: 0px 4px 5px rgba(0,0,0,0.4);
 }
 #mobDropmenu > div {
-	margin-bottom: 30px;
-}
-.dropmenu-background {
-	transition: 1s;
-	background-color: white !important;
+	margin-top: 35px;
+	margin-bottom: 35px;
 }
 .pushed{
 	color: #333333 !important;
 }
-@media (max-width: 1080px) {
-	.menu{
-		display: none;
-	}
-	.mobMenu {
-		display: block;
-		position: fixed;
-		z-index: 1000;
-		transition: .5s;
-		width: 100%;
-	}
-	.mobMenu > div {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-	}
-}
-
 /*-------------------------------------------------------------------- ЗАГЛАВНАЯ СЕКЦИЯ*/
 .hero-section{
 	width:100%;
@@ -171,9 +148,10 @@ section > div{
 .header > div:first-child > p {
 	font-size: 22px;
 	font-weight: 600;
+	margin: 0px 10px 0;
 }
 .header > div:nth-child(2){
-	margin: 10% 0 10%;
+	margin: 7vh 0 7vh;
 }
 .header > div:nth-child(2)> p{
 	font-size: 18px;
@@ -303,7 +281,6 @@ section > div{
 } 
 .program-section__block{
 	text-align: center;
-    min-width: 171px;
     margin-top: 1.5%;
 	margin-right: 13%;
 }
@@ -346,11 +323,11 @@ section > div{
 	height: 50px;
 	margin: 20px 0;
 }
-.show-section > div > div > div {
-	height: 500px;
-}
 .show-section > div > div > div:first-child li img {
     top: 3px;
+}
+.show-section > div > div > div > ul li {
+	height: 70px;
 }
 /*---------------------------СЕКЦИЯ "ОБЫЧНЫЙ ПСИХОЛОГИЧЕСКИЙ СЕМИНАР И ШОУ МИХАИЛА ФИЛЯЕВА"-+-СЕКЦИЯ "СТОИМОСТЬ"*/
 .show-section > div > div > div,.price-section > div > div > div{
@@ -359,7 +336,7 @@ section > div{
     box-shadow: 0px 0px 20px 0px #333333ab;
     padding: 35px 0;
     margin: 10px 13px;
-    width: 45%;
+    width: 40%;
     transition: .3s;
 }
 .flex-center-row{
@@ -387,7 +364,7 @@ section > div{
     top: 0;
     left: -2.5em;
 }
-.unactive, .unactive i {
+.unactive {
 	color: gray;
 }
 /*-------------------------------------------------------------------- СЕКЦИЯ "КАК ПРОХОДЯТ НАШИ МЕРОПРИЯТИЯ" СЛАЙДЕР*/
@@ -442,13 +419,14 @@ section > div{
 	background-image: url(../gallery/slides/DSC_4559.jpg);
 }
 /*-------------------------------------------------------------------- СЕКЦИЯ "СТОИМОСТЬ"*/
-.price-section{
-	background-color: #f3f3f2;	
-}
-.price-section div > div > div > div {
+.button-div {
 	display: flex;
 	justify-content: center;
 	margin: 40px 0 10px 0;
+}
+
+.price-section{
+	background-color: #f3f3f2;	
 }
 .price-section h3 {
 	font-weight: 700;
@@ -468,7 +446,7 @@ section > div{
 }
 .price-section .flex-center-row > div {
 	margin: 0 25px 0;
-	width: 36%;
+	width: 31%;
 	box-shadow: none;
 }
 .price-section li {
@@ -497,6 +475,9 @@ section > div{
 	font-weight: 400;
 	font-size: 18px;
 }
+.place-section > div > div > div img {
+	margin: auto;
+}
 /*-------------------------------------------------------------------- ПОДВАЛ*/
 footer {
 	display: flex;
@@ -523,6 +504,9 @@ footer > div:first-child {
 	justify-content: center;
 	align-items: center;
 }
+footer > div > div i {
+	margin-right: 10px;
+}
 footer > div a {
 	text-decoration: none;
 	color: white;
@@ -537,4 +521,271 @@ footer img {
 footer h2 {
 	font-weight: 800;
     font-size: 20px;
+}
+
+/*-------------------------------------------------------------------- АДАПТИВНОСТЬ ЭКРАНА*/
+@media (max-width: 1348px) {
+	footer > div a{
+		font-size: 16px;
+	}
+	footer > div {
+    width: 40%;
+    margin: 10px 10% 30px;
+	}
+}
+@media (max-width: 1267px) {
+	.program-section__block{
+		margin-right: 10%;
+	}
+	.price-section .flex-center-row > div {
+		width: 45%;
+	}
+	@media (max-width: 1140px) {
+		.program-section__block{
+			margin-right: 8%;
+		}
+		.show-section > div > div > div{
+		    width: 50%;
+		}
+		@media (max-width: 1040px) {
+			.menu{
+				display: none;
+			}
+			.mobMenu {
+				display: block;
+				position: fixed;
+				z-index: 1000;
+				transition: .5s;
+				width: 100%;
+			}
+			.mobMenu > div {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+			}
+			.hero-section {
+			    background-image: url(../gallery/DSC_9333.jpg);
+			    background-position: center; 
+			    background-repeat: no-repeat;
+			    background-size: cover;
+			}
+			.hero-section > section {
+				justify-content: center;
+			    background: linear-gradient(to bottom, #ffffff00 22%, #ffffff);
+			}
+			.header{
+				margin: 0;
+				padding: 100px 0 60px;
+			}
+			.header > div:first-child {
+			    justify-content: space-between;
+			}
+			.header > div:nth-child(2) {
+			    margin: 7vh 0 1vh;
+			}
+			.header > div h1{
+				font-size: 40px;
+			}
+			.header > div h3{
+				font-size: 26px;
+			}
+			.header .link-button{
+				font-size: 30px;
+				margin: 5px 0 5px;
+			}
+			.program-section > div > div {
+				display: block;
+			    margin: 0 0 30px 0;
+			}
+			.program-section > div > div:hover h4 {
+				border-bottom: 2px solid #36d99800;
+			} 
+			.program-section__block {
+			     margin-right: 0; 
+			}
+			.program-section__list {
+			    width: 100%;
+			}
+			.program-section__list p {
+				text-align: center;
+			}
+			.flex-center-row {
+			    flex-direction: column;
+			}
+			.show-section > div > div > div {
+			    width: 80%;
+			}
+			.price-section .flex-center-row > div {
+			    margin: 0 25px 25px;
+			    width: 80%;
+			}
+			.place-section > div > div > div {
+			    width: 80%;
+			    margin: 10px 30px;
+			}
+			footer {
+			    flex-direction: column;
+			}
+			footer > div:first-child {
+			}
+			footer > div:last-child > div:first-child {
+				margin: auto;
+				margin-bottom: 50px;
+			}
+			footer > div:last-child > div:first-child i {
+				font-size: 60px;
+			}
+			footer > div {
+			    width: 60%;
+			}
+			footer > div:last-child > div a {
+				margin: auto;
+				font-size: 40px;
+			}
+			footer > div > div i {
+			    font-size: 40px;
+			    margin-right: 10px;
+			    padding: 10px;
+			}
+			@media (max-width: 991px) {
+				footer > div {
+				    width: 70%;
+				}
+				@media (max-width: 853px) {
+					.autor-section {
+					    background-position: 70% 70%;
+					}
+					footer > div {
+					    width: 90%;
+					}
+					@media (max-width: 683px) {
+						section > div {
+						    margin: 0 10px;
+						}
+						.mobMenu > div > div {
+						    padding: 40px;
+						    font-size: 40px;
+						}
+						.slider-block {
+						    width: 100vw;
+						}
+						.slider-block  > div > div {
+							height: 50vw;
+						}
+						.video-section > div > div > div {
+						    display: flex;
+						    flex-direction: column;
+						    justify-content: center;
+						    align-items: center;
+						}
+						@media (max-width: 655px) {
+							.slider-section > div {
+							    display: flex;
+							    flex-direction: column;
+							    justify-content: center;
+							    align-items: center;
+							}
+							.mobMenu > div > div {
+							    padding: 30px;
+							    font-size: 30px;
+							}
+							footer > div:last-child > div a {
+								font-size: 30px;
+							}
+							@media (max-width: 540px) {
+								.autor-section ul {
+								    width: 90%;
+								}
+								h2 {
+								    font-size: 20px;
+								}
+								.show-section > div > div > div {
+								    width: 95%;
+								}
+								.price-section .flex-center-row > div {
+								    width: 95%;
+								}
+								footer > div:last-child > div a {
+								    font-size: 20px;
+								}
+								@media (max-width: 490px) {
+									.mobMenu > div > div {
+									    padding: 25px;
+									    font-size: 20px;
+									}
+									@media (max-width: 400px) {
+										.link-button{
+											font-size: 18px;
+										}
+										.show-section > div > div > div > ul li {
+										    height: 100px;
+										}
+										.place-section img {
+										    width: 290px;
+										}
+										.place-section h3 {
+										    font-size: 18px;
+										}
+										footer > div:last-child > div:first-child i {
+										    font-size: 40px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-height: 800px) {
+	.header > div:nth-child(2){
+		margin: 3vh 0 3vh;
+	}
+	@media (max-height: 650px) {
+		.header > div:nth-child(2){
+			margin: 2vh 0 2vh;
+		}
+		.header .link-button{
+			margin: 15px 0 10px;
+		}
+		@media (max-height: 555px) {
+			.header > div h1{
+				margin: 5px 0;
+			}
+			.header > div h3{
+				margin: 3px 0;
+			}
+			.header {
+			    padding: 70px 0 10px !important;
+			}
+			@media (max-height: 470px) {
+				.header p {
+					font-size: 14px;
+					margin: 5px 0;
+				}
+				@media (max-height: 430px) {
+					.header > div h1{
+						margin: 2px 0;
+						font-size: 25px;
+					}
+					.header > div h3{
+						margin: 1px 0;
+						font-size: 16px;
+					}
+					.header .link-button{
+						font-size: 14px;
+						margin: 5px 0 5px;
+					}
+					.header p {
+						font-size: 14px;
+						margin: 4px 0;
+					}
+				}
+			}
+		}
+	}
 }
