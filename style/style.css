@@ -113,7 +113,6 @@ section > div{
 	width:100%;
 	height: 100vh;
 	background-image: url(../gallery/DSC_9383.jpg);
-	/*background-position: center;*/
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -282,7 +281,7 @@ section > div{
 .program-section__block{
 	text-align: center;
     margin-top: 1.5%;
-	margin-right: 13%;
+	margin-right: 8%;
 }
 .program-section__block p, .program-section__list p {
 	font-size: 16px;
@@ -448,7 +447,7 @@ section > div{
 }
 .price-section .flex-center-row > div {
 	margin: 0 25px 0;
-	width: 31%;
+	width: 45%;
 	box-shadow: none;
 }
 .price-section li {
@@ -499,8 +498,8 @@ footer > div{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	width: 20%;
-    margin: 10px 15% 30px;
+	width: 35%;
+    margin: 10px 10% 30px
 }
 footer > div:first-child {
 	justify-content: center;
@@ -513,7 +512,7 @@ footer > div a {
 	text-decoration: none;
 	color: white;
 	font-weight: 400;
-	font-size: 18px;
+	font-size: 16px;
 }
 footer img {
 	width: 150px;
@@ -526,208 +525,185 @@ footer h2 {
 }
 
 /*-------------------------------------------------------------------- АДАПТИВНОСТЬ ЭКРАНА*/
-@media (max-width: 1348px) {
-	footer > div a{
-		font-size: 16px;
+@media only screen and (max-width: 1140px) {
+	.show-section > div > div > div{
+	    width: 50%;
 	}
-	footer > div {
-    width: 40%;
-    margin: 10px 10% 30px;
-	}
-}
-@media (max-width: 1267px) {
-	.program-section__block{
-		margin-right: 10%;
-	}
-	.price-section .flex-center-row > div {
-		width: 45%;
-	}
-	@media (max-width: 1140px) {
-		.program-section__block{
-			margin-right: 8%;
+	@media only screen and (max-width: 1024px) {
+		.menu{
+			display: none;
 		}
-		.show-section > div > div > div{
-		    width: 50%;
+		.mobMenu {
+			display: block;
+			position: fixed;
+			z-index: 1000;
+			transition: .5s;
+			width: 100%;
 		}
-		@media (max-width: 1040px) {
-			.menu{
-				display: none;
-			}
-			.mobMenu {
-				display: block;
-				position: fixed;
-				z-index: 1000;
-				transition: .5s;
-				width: 100%;
-			}
-			.mobMenu > div {
-				display: flex;
-				flex-direction: row;
-				justify-content: space-between;
-				align-items: center;
-			}
-			.hero-section {
-			    background-image: url(../gallery/DSC_9333.jpg);
-			    background-position: center; 
-			    background-repeat: no-repeat;
-			    background-size: cover;
-			}
-			.hero-section > section {
-				justify-content: center;
-			    background: linear-gradient(to bottom, #ffffff00 22%, #ffffff);
-			}
-			.header{
-				margin: 0;
-				padding: 100px 0 60px;
-			}
-			.header > div:first-child {
-			    justify-content: space-between;
-			}
-			.header > div:nth-child(2) {
-			    margin: 7vh 0 1vh;
-			}
-			.header > div h1{
-				font-size: 40px;
-			}
-			.header > div h3{
-				font-size: 26px;
-			}
-			.link-button {
-			    font-size: 40px;
-			    margin: 5px 0 5px;
-			}
-			.program-section > div > div {
-				display: block;
-			    margin: 0 0 70px 0;
-			}
-			.program-section > div > div:hover h4 {
-				border-bottom: 2px solid #36d99800;
-			} 
-			.program-section__block {
-			     margin-right: 0; 
-			}
-			.program-section__list {
-			    width: 100%;
-			}
-			.program-section__list p {
-				text-align: center;
-			}
-			.flex-center-row {
-			    flex-direction: column;
-			}
-			.show-section > div > div > div {
-			    width: 80%;
-			}
-			.price-section .flex-center-row > div {
-			    margin: 0 25px 25px;
-			    width: 80%;
-			}
-			.place-section > div > div > div {
-			    width: 80%;
-			    margin: 10px 30px;
-			}
-			footer {
-			    flex-direction: column;
-			}
-			footer > div:first-child {
-			}
-			footer > div:last-child > div:first-child {
-				margin: auto;
-				margin-bottom: 50px;
-			}
-			footer > div:last-child > div:first-child i {
-				font-size: 60px;
-			}
+		.mobMenu > div {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.hero-section {
+		    background-image: url(../gallery/DSC_9333.jpg); 
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		}
+		.hero-section > section {
+			justify-content: center;
+		    background: linear-gradient(to bottom, #ffffff00 22%, #ffffff);
+		}
+		.header{
+			margin: 0;
+			padding: 100px 0 60px;
+		}
+		.header > div:first-child {
+		    justify-content: space-between;
+		}
+		.header > div:nth-child(2) {
+		    margin: 7vh 0 1vh;
+		}
+		.header > div h1{
+			font-size: 40px;
+		}
+		.header > div h3{
+			font-size: 26px;
+		}
+		.link-button {
+		    padding: 20px 100px;
+		    margin: 5px 0 5px;
+		}
+		.program-section h2 {
+			margin-bottom: 80px;
+		}
+		.program-section > div > div {
+			display: block;
+		    margin: 0 0 100px 0;
+		}
+		.program-section > div > div:hover h4 {
+			border-bottom: 2px solid #36d99800;
+		} 
+		.program-section__block {
+		     margin-right: 0; 
+		}
+		.program-section__list {
+		    width: 100%;
+		}
+		.program-section__list p {
+			text-align: center;
+		}
+		.flex-center-row {
+		    flex-direction: column;
+		}
+		.show-section > div > div > div {
+		    width: 80%;
+		}
+		.price-section .flex-center-row > div {
+		    margin: 0 25px 25px;
+		    width: 80%;
+		}
+		.place-section > div > div > div {
+		    width: 80%;
+		    margin: 10px 30px;
+		}
+		footer {
+		    flex-direction: column;
+		}
+		footer > div:first-child {
+		}
+		footer > div:last-child > div:first-child {
+			margin: auto;
+			margin-bottom: 50px;
+		}
+		footer > div:last-child > div:first-child i {
+			font-size: 60px;
+		}
+		footer > div {
+		    width: 60%;
+		}
+		footer > div:last-child > div a {
+			margin: auto;
+			font-size: 40px;
+		}
+		footer > div > div i {
+		    font-size: 40px;
+		    margin-right: 10px;
+		    padding: 10px;
+		}
+		@media (max-width: 991px) {
 			footer > div {
-			    width: 60%;
+			    width: 70%;
 			}
-			footer > div:last-child > div a {
-				margin: auto;
-				font-size: 40px;
-			}
-			footer > div > div i {
-			    font-size: 40px;
-			    margin-right: 10px;
-			    padding: 10px;
-			}
-			@media (max-width: 991px) {
-				footer > div {
-				    width: 70%;
+			@media (max-width: 853px) {
+				.autor-section {
+				    background-position: 70% 70%;
 				}
-				@media (max-width: 853px) {
-					.autor-section {
-					    background-position: 70% 70%;
+				footer > div {
+				    width: 90%;
+				}
+				@media (max-width: 683px) {
+					section > div {
+					    margin: 0 10px;
 					}
-					footer > div {
-					    width: 90%;
+					.slider-block {
+					    width: 100vw;
 					}
-					@media (max-width: 683px) {
-						section > div {
-						    margin: 0 10px;
-						}
-						.slider-block {
-						    width: 100vw;
-						}
-						.slider-block  > div > div {
-							height: 50vw;
-						}
-						.video-section > div > div > div {
+					.slider-block  > div > div {
+						height: 50vw;
+					}
+					.video-section > div > div > div {
+					    display: flex;
+					    flex-direction: column;
+					    justify-content: center;
+					    align-items: center;
+					}
+					@media (max-width: 655px) {
+						.slider-section > div {
 						    display: flex;
 						    flex-direction: column;
 						    justify-content: center;
 						    align-items: center;
 						}
-						@media (max-width: 655px) {
-							.what-would-you-get-section li img {
-							    width: 40px;
-							    top: 0px;
-							    left: -2.5em;
+						footer > div:last-child > div a {
+							font-size: 30px;
+						}
+						@media (max-width: 540px) {
+							.autor-section ul {
+							    width: 90%;
 							}
-							.slider-section > div {
-							    display: flex;
-							    flex-direction: column;
-							    justify-content: center;
-							    align-items: center;
+							h2 {
+							    font-size: 20px;
+							}
+							.show-section > div > div > div {
+							    width: 95%;
+							}
+							.price-section .flex-center-row > div {
+							    width: 95%;
 							}
 							footer > div:last-child > div a {
-								font-size: 30px;
+							    font-size: 20px;
 							}
-							@media (max-width: 540px) {
-								.autor-section ul {
-								    width: 90%;
-								}
-								h2 {
+							@media (max-width: 490px) {
+								.mobMenu > div > div {
 								    font-size: 20px;
 								}
-								.show-section > div > div > div {
-								    width: 95%;
-								}
-								.price-section .flex-center-row > div {
-								    width: 95%;
-								}
-								footer > div:last-child > div a {
-								    font-size: 20px;
-								}
-								@media (max-width: 490px) {
-									.mobMenu > div > div {
-									    font-size: 20px;
+								@media (max-width: 400px) {
+									.link-button{
+										font-size: 18px;
 									}
-									@media (max-width: 400px) {
-										.link-button{
-											font-size: 18px;
-										}
-										.show-section > div > div > div > ul li {
-										    height: 100px;
-										}
-										.place-section img {
-										    width: 290px;
-										}
-										.place-section h3 {
-										    font-size: 18px;
-										}
-										footer > div:last-child > div:first-child i {
-										    font-size: 40px;
-										}
+									.show-section > div > div > div > ul li {
+									    height: 100px;
+									}
+									.place-section img {
+									    width: 290px;
+									}
+									.place-section h3 {
+									    font-size: 18px;
+									}
+									footer > div:last-child > div:first-child i {
+									    font-size: 40px;
 									}
 								}
 							}
@@ -738,14 +714,24 @@ footer h2 {
 		}
 	}
 }
-
-@media (max-height: 800px) {
+@media (max-device-height: 768px) {
 	.hero-section {
-	    min-height: 1000px;
+	    height: 1000px;
 	}
 	.hero-section > section {
 	    height: 1000px;
 	}
+	.what-would-you-get-section li img {
+	    width: 40px;
+	    position: absolute;
+	    top: 0px;
+	    left: -2.5em;
+	}
+	.what-would-you-get-section li {
+		color: red;
+	}
+}
+@media (max-height: 750px) {
 	.header > div:nth-child(2){
 		margin: 3vh 0 3vh;
 	}
@@ -766,30 +752,6 @@ footer h2 {
 			.header {
 			    padding: 70px 0 10px !important;
 			}
-/*			@media (max-height: 470px) {
-				.header p {
-					font-size: 14px;
-					margin: 5px 0;
-				}
-				@media (max-height: 430px) {
-					.header > div h1{
-						margin: 2px 0;
-						font-size: 25px;
-					}
-					.header > div h3{
-						margin: 1px 0;
-						font-size: 16px;
-					}
-					.header .link-button{
-						font-size: 14px;
-						margin: 5px 0 5px;
-					}
-					.header p {
-						font-size: 14px;
-						margin: 4px 0;
-					}
-				}
-			}*/
 		}
 	}
 }
