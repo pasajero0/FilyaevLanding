@@ -11,14 +11,14 @@
 </head>
 <body>
 	<div id="menu" class="menu">
-		<div>
+		<nav>
 			<div><a href="#about">О СЕМИНАРЕ</a></div>
 			<div><a href="#program">ПРОГРАММА</a></div>
 			<div><a href="#autor">КТО ПРОВОДИТ</a></div>
 			<div><a href="#video">ВИДЕО</a></div>
 			<div><a href="#openyourself">ЗАПИСАТЬСЯ</a></div>
 			<div><a href="tel:+79581000145"><i class="fas fa-phone"></i> +7 958 100 01 45</a></div>
-		</div>
+		</nav>
 	</div>
 	<div class="mobMenu">
 		<div>
@@ -48,7 +48,7 @@
 					<h3>Тренинг-трансформация от психолога-шоумена</h3>
 					<p>Измени за день то, что ограничивает тебя<br> в любви и бизнесе всю жизнь</p>
 				</div>
-				<a class="link-button" href="">Записаться</a>
+				<a class="link-button" href="http://mfilyaev.com/payment.html">Записаться</a>
 			</div>
 		</section>
 	</section>
@@ -72,13 +72,13 @@
 	<section class="application-section" id="openyourself">
 		<div>
 			<h2>Открой себя. Узнай себя. Поменяй себя легко</h2>
-			<a class="link-button" href="">Оставить заявку</a>
+			<a class="link-button" href="http://mfilyaev.com/payment.html" >Оставить заявку</a>
 		</div>
 	</section>
 	<section class="autor-section" id="autor">
 		<div>
 			<h2>АВТОР И ВЕДУЩИЙ СЕМИНАРА</h2>
-			<h4>УДИВИТЕЛЬНЫЙ ЧЕЛОВЕК, КОТОРЫЙ ДЕЛАЕТ ИЗ СЕМИНАРОВ ШОУ</h4>
+			<h3>УДИВИТЕЛЬНЫЙ ЧЕЛОВЕК, КОТОРЫЙ ДЕЛАЕТ ИЗ СЕМИНАРОВ ШОУ</h3>
 			<p>А ещё - клинический психолог и гипнотерапевт, способный изменить жизнь человека за один день;
 			куратор проекта PSY2/0, телеведущий и автор программ на ТВ, популярный тренер по психосоматике и
 			эмоциональной психотерапии.</p>
@@ -115,18 +115,25 @@
 			</div>
 		</div>
 	</section>
-	<!-- <section>
+	<section class="bonus-section">
 		<div>
 			<h2>ПОЛЕЗНЫЙ БОНУС ДЛЯ ВАС</h2>
-			<h5>УКАЖИТЕ ПОЧТУ И ПОЛУЧИТЕ БЕСПЛАТНО ГЛАВУ ЧЕК-ЛИСТ УПРАЖНЕНИЙ НА ПСИХОСОМАТИКУ</h5>
+			<h3>УКАЖИТЕ ПОЧТУ И ПОЛУЧИТЕ БЕСПЛАТНО ГЛАВУ ЧЕК-ЛИСТ УПРАЖНЕНИЙ НА ПСИХОСОМАТИКУ</h3>
 		</div>
-	</section> -->
+		<div class="form-block">
+			<form action='php/mail.php' method="POST">
+				<input type="text" name="name" placeholder="Ваше имя" >
+				<input id="email" type="email" name="email" placeholder="E-mail" >
+				<input class="link-button" type="submit" name="submit" class="button" value="Записаться" >
+			</form>
+		</div>
+	</section>
 	<section class="program-section" id="program">
 		<div>
 			<h2>ПРОГРАММА СЕМИНАРА</h2>
 			<div>
 				<div class="program-section__block">
-					<h4><span>Блок 1.  Про эмоции</span></h4>
+					<h3><span>Блок 1.  Про эмоции</span></h3>
 					<p>длительность 1,5 часа</p>
 				</div>
 				<div class="program-section__list">
@@ -141,7 +148,7 @@
 			</div>
 			<div>
 				<div class="program-section__block">
-					<h4><span>Блок 2.  Про бизнес</span></h4>
+					<h3><span>Блок 2.  Про бизнес</span></h3>
 					<p>длительность 1,5 часа</p>
 				</div>
 				<div class="program-section__list">
@@ -164,7 +171,7 @@
 			</div>
 			<div>
 				<div class="program-section__block">
-					<h4><span>Блок 3.  Про любовь</span></h4>
+					<h3><span>Блок 3.  Про любовь</span></h3>
 					<p>длительность 1,5 часа</p>
 				</div>
 				<div class="program-section__list">
@@ -180,7 +187,7 @@
 				</div>
 			</div>
 			<div class="button-div">
-				<a class="link-button" href="">Записаться</a>
+				<a class="link-button" href="http://mfilyaev.com/payment.html">Записаться</a>
 			</div>
 		</div>
 	</section>
@@ -253,7 +260,7 @@
 						<li class="unactive"><img src="gallery/icons/крестик.svg" alt="">В стиле loft для проведения любых мероприятий.</li>
 					</ul>
 					<div class="button-div">
-						<a class="link-button" href="">Оплатить</a>
+						<a class="link-button" href="http://mfilyaev.com/payment.html">Оплатить</a>
 					</div>
 				</div>
 				<div>
@@ -268,7 +275,7 @@
 						<li><img src="gallery/icons/галочка2.svg" alt="">В стиле loft для проведения любых мероприятий.</li>
 					</ul>
 					<div class="button-div">
-						<a class="link-button" href="">Оплатить</a>
+						<a class="link-button" href="http://mfilyaev.com/payment.html">Оплатить</a>
 					</div>
 				</div>
 			</div>
@@ -279,7 +286,7 @@
 			<h2>МЕСТО ПРОВЕДЕНИЯ</h2>
 			<div class="flex-center-row">
 				<div>
-					<img src="gallery/DSC_9383.jpg" alt="place">
+					<img src="gallery/place.jpg" alt="place">
 				</div>
 				<div>
 					<h3><i class="fas fa-map-marker-alt"></i> SkyHall, Москва-Сити</h3>
@@ -294,7 +301,7 @@
 				</div>
 			</div>
 			<div class="button-div">
-				<a class="link-button" href="">Записаться</a>
+				<a class="link-button" href="http://mfilyaev.com/payment.html">Записаться</a>
 			</div>
 		</div>
 	</section>

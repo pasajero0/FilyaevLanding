@@ -52,7 +52,7 @@ section > div{
 	background-color: white;
 	box-shadow: 0 0 8px rgba(0,0,0,0.4)
 }
-.menu > div {
+.menu > nav {
 	height: 100%;
 	display: flex;
 	flex-direction: row;
@@ -68,11 +68,11 @@ section > div{
 	font-size: 14px;
 	font-weight: 600; 
 }
-.menu > div > div {
+.menu > nav > div {
 	border-bottom: 2px solid #3fb39500;
 	transition: .3s;
 }
-.menu > div > div:hover{
+.menu > nav > div:hover{
 	border-bottom: 2px solid #36d999;
 }
 /*-------------------------------------------------------------------------------mobMenu*/
@@ -215,7 +215,7 @@ section > div{
     background-size: cover;
 	background-image: url(../gallery/DSC_9169.jpg);
 }
-.autor-section h4 {
+.autor-section h3 {
 	font-weight: 400;
 	font-size: 20px;
 	margin-bottom: 20px;
@@ -244,6 +244,47 @@ section > div{
 .autor-section li span {
 	color: #333333;
 }
+/*-------------------------------------------------------------------- СЕКЦИЯ "ПОЛЕЗНЫЙ БОНУС ДЛЯ ВАС"*/
+.bonus-section > div h2{
+	margin-bottom: 15px;
+}
+ .bonus-section > div h3 {
+ /*	margin: auto auto 50px;
+ 	width: 70%;*/
+	font-weight: 400;
+}
+.bonus-section > div:first-child {
+	padding: 60px 0 0px;
+}
+.bonus-section > div {
+	margin: 0 0;
+}
+.form-block {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background-color: #bceee8;
+	padding: 50px 0;
+}
+.form-block form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.form-block form input:nth-child(1),.form-block form input:nth-child(2) {
+	width: 270px;
+	font-size: 15px;
+	padding: 15px;
+	margin-bottom: 6.5px;
+	border: none;
+}
+.form-block form input:last-child {
+	border-radius: 50px;
+	outline: none;
+}
 /*-------------------------------------------------------------------- СЕКЦИЯ "ВИДЕООТЗЫВЫ"*/
 .video-section {
 	background-color:#ededed;
@@ -269,15 +310,15 @@ section > div{
 	display: flex;
 	justify-content: center;
 }
-.program-section__block h4 span {
+.program-section__block h3 span {
 	border-bottom: 2px solid #36d99800;
 	transition: .3s;
 }
-.program-section__block h4 {
+.program-section__block h3 {
 	font-weight: 700;
 	font-size: 22px;
 }
-.program-section > div > div:hover h4 > span {
+.program-section > div > div:hover h3 > span {
 	border-bottom: 2px solid #36d998;
 } 
 .program-section__block{
@@ -393,34 +434,34 @@ section > div{
     background-size: cover;
 }
 .slide-1{
-	background-image: url(../gallery/slides/DSC_0035.jpg);
+	background-image: url(../gallery/slides/1.jpg);
 }
 .slide-2{
-	background-image: url(../gallery/slides/DSC_0040.jpg);
+	background-image: url(../gallery/slides/2.jpg);
 }
 .slide-3{
-	background-image: url(../gallery/slides/DSC_0242.jpg);
+	background-image: url(../gallery/slides/3.jpg);
 }
 .slide-4{
-	background-image: url(../gallery/slides/DSC_0287.jpg);
+	background-image: url(../gallery/slides/4.jpg);
 }
 .slide-5{
-	background-image: url(../gallery/slides/DSC_1466.jpg);
+	background-image: url(../gallery/slides/5.jpg);
 }
 .slide-6{
-	background-image: url(../gallery/slides/DSC_3670.jpg);
+	background-image: url(../gallery/slides/6.jpg);
 }
 .slide-7{
-	background-image: url(../gallery/slides/DSC_3771.jpg);
+	background-image: url(../gallery/slides/7.jpg);
 }
 .slide-8{
-	background-image: url(../gallery/slides/DSC_3784.jpg);
+	background-image: url(../gallery/slides/8.jpg);
 }
 .slide-9{
-	background-image: url(../gallery/slides/DSC_4001.jpg);
+	background-image: url(../gallery/slides/9.jpg);
 }
 .slide-10{
-	background-image: url(../gallery/slides/DSC_4559.jpg);
+	background-image: url(../gallery/slides/10.jpg);
 }
 /*-------------------------------------------------------------------- СЕКЦИЯ "СТОИМОСТЬ"*/
 .button-div {
@@ -591,7 +632,7 @@ footer h2 {
 			display: block;
 		    margin: 0 0 160px 0;
 		}
-		.program-section > div > div:hover h4 {
+		.program-section > div > div:hover h3 {
 			border-bottom: 2px solid #36d99800;
 		} 
 		.program-section__block {
@@ -602,6 +643,12 @@ footer h2 {
 		}
 		.program-section__list p {
 			text-align: center;
+		}
+		.program-section__block p {
+			font-size: 12px;
+		}
+		.program-section__list p {
+			font-size: 18px;
 		}
 		.flex-center-row {
 		    flex-direction: column;
