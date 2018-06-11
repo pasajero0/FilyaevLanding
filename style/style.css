@@ -494,9 +494,24 @@ section > div{
 	width: 45%;
 	box-shadow: none;
 }
+.price-section .flex-center-row p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    color: #555555;
+}
 .price-section li {
 	font-size: 18px;
 	font-weight: 400;
+}
+.link-button-unactive {
+	background: lightgray;
+	border: 2px solid lightgray;
+}
+.link-button-unactive:hover {
+	box-shadow: none;
+	cursor: default;
 }
 /*-------------------------------------------------------------------- СЕКЦИЯ "МЕСТО"*/
 .place-section > div > div > div {
@@ -519,6 +534,7 @@ section > div{
 .place-section p {
 	font-weight: 400;
 	font-size: 18px;
+	text-align: justify;
 }
 .place-section > div > div > div img {
 	margin: auto;
