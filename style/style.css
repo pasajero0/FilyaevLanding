@@ -406,7 +406,7 @@ section > div{
 .flex-center-row li img {
 	width: 35px;
     position: absolute;
-    top: 0;
+    top: -5px;
     left: -2.5em;
 }
 .unactive {
@@ -638,7 +638,7 @@ footer h2 {
 		.what-would-you-get-section li img {
 		    width: 40px;
 		    position: absolute;
-		    top: 0px;
+		    top: -10px;
 		    left: -2.5em;
 		}
 		.program-section h2 {
