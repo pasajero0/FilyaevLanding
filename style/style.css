@@ -155,9 +155,12 @@ section > div{
 .header > div:nth-child(2)> p{
 	font-size: 18px;
 }
-.header > div:last-child> p{
+.header > div:nth-child(3)> p{
 	font-size: 16px;
 	font-weight: 400;
+}
+.header > div:nth-child(4){
+	margin: 60px 0 25px;
 }
 .header > div p,.header > div h1,.header > div h3 {
 	text-align: center;
