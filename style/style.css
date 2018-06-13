@@ -492,10 +492,20 @@ section > div{
 .price-section span {
 	border-bottom: 3px solid #36d998;
 }
+.price-section  div > p {
+	text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    font-style: italic;
+    color: #555555;
+}
 .price-section .flex-center-row > div {
 	margin: 0 25px 0;
 	width: 45%;
 	box-shadow: none;
+}
+.price-section .flex-center-row {
+	margin-bottom: 80px;
 }
 .price-section .flex-center-row p {
     text-align: center;
