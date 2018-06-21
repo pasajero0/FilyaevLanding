@@ -547,8 +547,13 @@ i{
 	/*background: lightgray;*/
 }
 .payment-cell {
-	/*height: 250px;*/
+	height: 280px;
 	width: 48%;
+}
+.payment-cell:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .payment-cell ul {
 	width: 65%;
@@ -587,6 +592,12 @@ i{
 .payment-cell .button-div {
 	margin-top: 25px;
 	margin-bottom: 0;
+}
+.payment-btns {
+    margin: 0 !important;
+    padding: 20px !important;
+    width: 350px !important;
+    text-align: center !important;
 }
 
 
@@ -675,196 +686,206 @@ footer h2 {
 	.show-section > div > div > div{
 	    width: 50%;
 	}
-	@media only screen and (max-width: 1024px) {
-		.menu{
-			display: none;
+	@media (max-width: 1090px) {
+		.payments-block {
+			flex-direction: column;
 		}
-		.mobMenu {
-			display: block;
-			position: fixed;
-			z-index: 1000;
-			transition: .5s;
-			width: 100%;
-		}
-		.mobMenu > div {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			align-items: center;
-		}
-		.hero-section {
-		    background-image: url(../gallery/DSC_9333.jpg); 
-		    background-repeat: no-repeat;
-		    background-size: cover;
-		}
-		.hero-section > section {
-			justify-content: center;
-		    background: linear-gradient(to bottom, #ffffff00 22%, #ffffff);
-		}
-		.header{
-			margin: 0;
-			padding: 100px 0 60px;
-		}
-		.header > div:first-child {
-		    justify-content: space-between;
-		}
-		.header > div:nth-child(2) {
-		    margin: 7vh 0 1vh;
-		}
-		.header > div h1{
-			font-size: 40px;
-		}
-		.header > div h3{
-			font-size: 26px;
-		}
-		.link-button {
-		    padding: 20px 100px;
-		    margin: 5px 0 5px;
-		}
-		.what-would-you-get-section li img {
-		    width: 40px;
-		    position: absolute;
-		    top: -10px;
-		    left: -2.5em;
-		}
-		.program-section h2 {
-			margin-bottom: 80px;
-		}
-		.program-section > div > div {
-			display: block;
-		    margin: 0 0 160px 0;
-		}
-		.program-section > div > div:hover h3 {
-			border-bottom: 2px solid #36d99800;
-		} 
-		.program-section__block {
-		     margin-right: 0; 
-		}
-		.program-section__list {
-		    width: 95%;
-		}
-		.program-section__list p {
-			text-align: center;
-		}
-		.program-section__block p {
-			font-size: 12px;
-		}
-		.program-section__list p {
-			font-size: 18px;
-		}
-		.flex-center-row {
-		    flex-direction: column;
-		}
-		.show-section > div > div > div {
-		    width: 80%;
-		}
-		.show-section > div > div > div > ul li {
-			height: auto;
-		}
-		.price-section .flex-center-row > div {
-		    margin: 0 25px 25px;
-		    width: 80%;
-		}
-		.place-section > div > div > div {
-		    width: 80%;
-		    margin: 10px 30px;
-		}
-		footer {
-		    flex-direction: column;
-		}
-		footer > div:first-child {
-		}
-		footer > div:last-child > div:first-child {
-			margin: auto;
-			margin-bottom: 50px;
-		}
-		footer > div:last-child > div:first-child i {
-			font-size: 60px;
-		}
-		footer > div {
+		.payment-cell {
+		    height: none; 
 		    width: 60%;
+		    margin-bottom: 20px;
 		}
-		footer > div:last-child > div a {
-			margin: auto;
-			font-size: 40px;
-		}
-		footer > div > div i {
-		    font-size: 40px;
-		    margin-right: 10px;
-		    padding: 10px;
-		}
-		@media (max-width: 991px) {
-			footer > div {
-			    width: 70%;
+		@media only screen and (max-width: 1024px) {
+			.menu{
+				display: none;
 			}
-			@media (max-width: 853px) {
-				.autor-section {
-				    background-position: 70% 70%;
-				}
+			.mobMenu {
+				display: block;
+				position: fixed;
+				z-index: 1000;
+				transition: .5s;
+				width: 100%;
+			}
+			.mobMenu > div {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+			}
+			.hero-section {
+			    background-image: url(../gallery/DSC_9333.jpg); 
+			    background-repeat: no-repeat;
+			    background-size: cover;
+			}
+			.hero-section > section {
+				justify-content: center;
+			    background: linear-gradient(to bottom, #ffffff00 22%, #ffffff);
+			}
+			.header{
+				margin: 0;
+				padding: 100px 0 60px;
+			}
+			.header > div:first-child {
+			    justify-content: space-between;
+			}
+			.header > div:nth-child(2) {
+			    margin: 7vh 0 1vh;
+			}
+			.header > div h1{
+				font-size: 40px;
+			}
+			.header > div h3{
+				font-size: 26px;
+			}
+			.link-button {
+			    padding: 20px 100px;
+			    margin: 5px 0 5px;
+			}
+			.what-would-you-get-section li img {
+			    width: 40px;
+			    position: absolute;
+			    top: -10px;
+			    left: -2.5em;
+			}
+			.program-section h2 {
+				margin-bottom: 80px;
+			}
+			.program-section > div > div {
+				display: block;
+			    margin: 0 0 160px 0;
+			}
+			.program-section > div > div:hover h3 {
+				border-bottom: 2px solid #36d99800;
+			} 
+			.program-section__block {
+			     margin-right: 0; 
+			}
+			.program-section__list {
+			    width: 95%;
+			}
+			.program-section__list p {
+				text-align: center;
+			}
+			.program-section__block p {
+				font-size: 12px;
+			}
+			.program-section__list p {
+				font-size: 18px;
+			}
+			.flex-center-row {
+			    flex-direction: column;
+			}
+			.show-section > div > div > div {
+			    width: 80%;
+			}
+			.show-section > div > div > div > ul li {
+				height: auto;
+			}
+			.price-section .flex-center-row > div {
+			    margin: 0 25px 25px;
+			    width: 80%;
+			}
+			.place-section > div > div > div {
+			    width: 80%;
+			    margin: 10px 30px;
+			}
+			footer {
+			    flex-direction: column;
+			}
+			footer > div:first-child {
+			}
+			footer > div:last-child > div:first-child {
+				margin: auto;
+				margin-bottom: 50px;
+			}
+			footer > div:last-child > div:first-child i {
+				font-size: 60px;
+			}
+			footer > div {
+			    width: 60%;
+			}
+			footer > div:last-child > div a {
+				margin: auto;
+				font-size: 40px;
+			}
+			footer > div > div i {
+			    font-size: 40px;
+			    margin-right: 10px;
+			    padding: 10px;
+			}
+			@media (max-width: 991px) {
 				footer > div {
-				    width: 90%;
+				    width: 70%;
 				}
-				@media (max-width: 683px) {
-					section > div {
-					    margin: 0 10px;
+				@media (max-width: 853px) {
+					.autor-section {
+					    background-position: 70% 70%;
 					}
-					.slider-block {
-					    width: 100vw;
+					footer > div {
+					    width: 90%;
 					}
-					.slider-block  > div > div {
-						height: 50vw;
-					}
-					.video-section > div > div > div {
-					    display: flex;
-					    flex-direction: column;
-					    justify-content: center;
-					    align-items: center;
-					}
-					@media (max-width: 655px) {
-						.slider-section > div {
+					@media (max-width: 683px) {
+						section > div {
+						    margin: 0 10px;
+						}
+						.slider-block {
+						    width: 100vw;
+						}
+						.slider-block  > div > div {
+							height: 50vw;
+						}
+						.video-section > div > div > div {
 						    display: flex;
 						    flex-direction: column;
 						    justify-content: center;
 						    align-items: center;
 						}
-						footer > div:last-child > div a {
-							font-size: 30px;
-						}
-						@media (max-width: 540px) {
-							.autor-section ul {
-							    width: 90%;
-							}
-							h2 {
-							    font-size: 20px;
-							}
-							.show-section > div > div > div {
-							    width: 95%;
-							}
-							.price-section .flex-center-row > div {
-							    width: 95%;
+						@media (max-width: 655px) {
+							.slider-section > div {
+							    display: flex;
+							    flex-direction: column;
+							    justify-content: center;
+							    align-items: center;
 							}
 							footer > div:last-child > div a {
-							    font-size: 20px;
+								font-size: 30px;
 							}
-							@media (max-width: 490px) {
-								.mobMenu > div > div {
+							@media (max-width: 540px) {
+								.autor-section ul {
+								    width: 90%;
+								}
+								h2 {
 								    font-size: 20px;
 								}
-								@media (max-width: 400px) {
-									.link-button{
-										font-size: 18px;
+								.show-section > div > div > div {
+								    width: 95%;
+								}
+								.price-section .flex-center-row > div {
+								    width: 95%;
+								}
+								footer > div:last-child > div a {
+								    font-size: 20px;
+								}
+								@media (max-width: 490px) {
+									.mobMenu > div > div {
+									    font-size: 20px;
 									}
-									.show-section > div > div > div > ul li {
-									    height: 100px;
-									}
-									.place-section img {
-									    width: 290px;
-									}
-									.place-section h3 {
-									    font-size: 18px;
-									}
-									footer > div:last-child > div:first-child i {
-									    font-size: 40px;
+									@media (max-width: 400px) {
+										.link-button{
+											font-size: 18px;
+										}
+										.show-section > div > div > div > ul li {
+										    height: 100px;
+										}
+										.place-section img {
+										    width: 290px;
+										}
+										.place-section h3 {
+										    font-size: 18px;
+										}
+										footer > div:last-child > div:first-child i {
+										    font-size: 40px;
+										}
 									}
 								}
 							}
