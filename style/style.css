@@ -20,7 +20,7 @@ i{
 .fa-phone {
 	transform: rotate(90deg);
 }
-section > div{
+.container{
 	padding: 60px 0;
 	margin: 0 100px;
 }
@@ -525,6 +525,79 @@ section > div{
 .link-button-unactive:hover {
 	box-shadow: none;
 	cursor: default;
+}
+/*-------------------------------------------------------------------- СЕКЦИЯ "ЗАРЕГИСТРИРОВАТЬСЯ НА МЕРОПРИЯТИЕ"*/
+.event-registration-block h2 {
+	margin-top: 100px;
+    font-weight: 800;
+    font-size: 26px;
+    margin-bottom: 60px;
+}
+.event-payments{
+	width: 100%;
+	background: #bdeee9;
+}
+.payments-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	/*width: 100px;
+	height: 100%;*/
+	/*background: lightgray;*/
+}
+.payment-cell {
+	/*height: 250px;*/
+	width: 48%;
+}
+.payment-cell ul {
+	width: 65%;
+    margin: 0 auto;
+    list-style-type: none;
+}
+.payment-cell ul li{
+	font-family: Montserrat;
+	color:  #555555;
+	font-size: 20px;
+	font-weight: 500;
+	text-align: justify;
+}
+.payment-cell h3 {
+	margin-top: 0;
+	margin-bottom: 35px;
+}
+.payment-cell form  {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.payment-cell form input {
+	width: 270px;
+	font-size: 15px;
+	padding: 15px;
+	margin-bottom: 6.5px;
+	border: none;
+}
+.payment-cell form button {
+	margin-top: 15px;
+	border-radius: 50px;
+	outline: none;
+}
+.payment-cell .button-div {
+	margin-top: 25px;
+	margin-bottom: 0;
+}
+
+
+.pay-for-emotions-block{
+	width: 100%;
+	background: #bdeee9;
+	margin-top: 40px;
+}
+.pay-for-emotions-block h2 {
+	margin-top: 0;
+	margin-bottom: 10px;
 }
 /*-------------------------------------------------------------------- СЕКЦИЯ "МЕСТО"*/
 .place-section > div > div > div {

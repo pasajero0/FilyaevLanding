@@ -44,7 +44,7 @@
 	</div>
 	<section class="hero-section">
 		<section>
-			<div class="header">
+			<div class="header container">
 				<div>
 					<p>8 ИЮЛЯ</p>
 					<p>МОСКВА</p>
@@ -64,7 +64,7 @@
 		</section>
 	</section>
 	<section id="about" class="what-would-you-get-section">
-		<div>
+		<div class="container">
 			<h2>ЧТО ВЫ ПОЛУЧИТЕ?</h2>
 			<ul>
 				<li><img src="gallery/icons/галочка.svg" alt=""> Если болеете — узнаете, почему и зачем.</li>
@@ -81,7 +81,7 @@
 		</div>
 	</section>
 	<section id="openyourself" class="application-section">
-		<div>
+		<div class="container">
 			<h2>Открой себя. Узнай себя. Поменяй себя легко</h2>
 			<div class="scrollbtn">
 				<a class="link-button" href="#price">Оставить заявку</a>
@@ -89,7 +89,7 @@
 		</div>
 	</section>
 	<section id="autor" class="autor-section">
-		<div>
+		<div class="container">
 			<h2>АВТОР И ВЕДУЩИЙ СЕМИНАРА</h2>
 			<h3>УДИВИТЕЛЬНЫЙ ЧЕЛОВЕК, КОТОРЫЙ ДЕЛАЕТ ИЗ СЕМИНАРОВ ШОУ</h3>
 			<p>А ещё - клинический психолог и гипнотерапевт, способный изменить жизнь человека за один день;
@@ -114,7 +114,7 @@
 		</div>
 	</section>
 	<section id="video" class="video-section">
-		<div>
+		<div class="container">
 			<h2>ВИДЕО ОБ АВТОРЕ И ТРЕНИНГАХ</h2>
 			<div>
 				<div>
@@ -142,7 +142,7 @@
 		</div>
 	</section> -->
 	<section class="program-section" id="program">
-		<div>
+		<div class="container">
 			<h2>ПРОГРАММА СЕМИНАРА</h2>
 			<div>
 				<div class="program-section__block">
@@ -205,7 +205,7 @@
 		</div>
 	</section>
 	<section class="show-section">
-		<div>	
+		<div class="container">	
 			<h2>В ЧЕМ УНИКАЛЬНОСТЬ ПРОЕКТА ?</h2>
 			<div class="flex-center-row">
 				<div>
@@ -241,7 +241,7 @@
 		</div>
 	</section>
 	<section class="slider-section">
-		<div>
+		<div class="container">
 			<h2>КАК ПРОХОДЯТ НАШИ МЕРОПРИЯТИЯ</h2>
 			<div class="slider-block">
 			  	<div class="slide-1"></div>
@@ -258,13 +258,13 @@
 		</div>
 	</section>
 	<section id="price" class="price-section">
-		<div>
+		<div class="container">
 			<h2>СТОИМОСТЬ УЧАСТИЯ</h2>
 			<div class="flex-center-row">
 				<div>
 					<h3><span>СТАНДАРТ</span></h3>
-					<h3>4 000 P</h3>
-					<h4>6 000 P</h4>
+					<h3>БЕСПЛАТНО</h3>
+					<!-- <h4>6 000 P</h4> -->
 					<ul>
 						<li><img src="gallery/icons/галочка2.svg" alt=""></i>Инсайты, новые возможности в себе</li>
 						<li><img src="gallery/icons/галочка2.svg" alt=""></i>Осознание: "Почему у меня все так, а не иначе"</li>
@@ -273,14 +273,14 @@
 						<li class="unactive"><img src="gallery/icons/крестик.svg" alt="">Разбор конкретного запроса</li>
 						<li class="unactive"><img src="gallery/icons/крестик.svg" alt="">Ужин в компании Михаила Филяева и других гениальных людей</li>
 					</ul>
-					<div class="button-div">
+					<!-- <div class="button-div">
 						<a class="link-button" href="http://mfilyaev.com/payment.html">Оплатить</a>
-					</div>
+					</div> -->
 				</div>
 				<div>
 					<h3><span>VIP</span></h3>
 					<h3>20 000 P</h3>
-					<p>всего 5 мест</p>
+					<!-- <p>всего 5 мест</p> -->
 					<ul>
 						<li><img src="gallery/icons/галочка2.svg" alt="">Инсайты, новые возможности в себе</li>
 						<li><img src="gallery/icons/галочка2.svg" alt="">Осознание: "Почему у меня все так, а не иначе"</li>
@@ -289,18 +289,52 @@
 						<li><img src="gallery/icons/галочка2.svg" alt="">Разбор конкретного запроса</li>
 						<li><img src="gallery/icons/галочка2.svg" alt="">Ужин в компании Михаила Филяева и других гениальных людей</li>
 					</ul>
-					<div class="button-div">
-						<!-- Раскомментируйте нужную кнопку -->
+					<!-- <div class="button-div">
+						Раскомментируйте нужную кнопку
 						<a class="link-button" href="http://mfilyaev.com/payment.html">Оплатить</a>
-						<!-- <a class="link-button link-button-unactive">Оплатить</a> -->
+						<a class="link-button link-button-unactive">Оплатить</a>
+					</div> -->
+				</div>
+			</div>
+			<!-- <p>В назначении платежа укажите "8 июля". <br> Квитанция, которая придёт на почту, является вашим билетом!</p> -->
+		</div>
+	</section>
+	<section class="event-registration-block">
+		<h2>ЗАРЕГИСТРИРОВАТЬСЯ НА МЕРОПРИЯТИЕ</h2>
+		<div class="event-payments">
+			<div class="payments-block container">
+				<div class="payment-cell">
+					<h3>ПОСЕТИ МЕРОПРИЯТИЕ БЕСПЛАТНО -<br>ПЛАТИ ТОЛЬКО ЗА ПОЛУЧЕННЫЕ ЭМОЦИИ!</h3>
+					<form action="" method="POST">
+						<input type="text" name="name" placeholder="Ваше имя">
+						<input type="text" type="email" name="email" placeholder="E-mail">
+						<button class="link-button" type="submit" name="submit" class="button">Записаться</button>
+					</form>
+				</div>
+				<div class="payment-cell">
+					<h3>НУЖЕН ИНДИВИДУАЛЬНЫЙ ПОДХОД?<br>ПОКУПАЙ VIP-УЧАСТИЕ  ПОЛУЧИ:</h3>
+					<ul>
+						<li>- Билет в первый ряд</li>
+						<li>- Работа с личным кейсом</li>
+						<li>- Информативный ужин с <br> Михаилом Филяевым</li>
+					</ul>
+					<div class="button-div">
+						<a class="link-button" href="http://mfilyaev.com/payment.html">Оплатить VIP</a>
 					</div>
 				</div>
 			</div>
-			<p>В назначении платежа укажите "8 июля". <br> Квитанция, которая придёт на почту, является вашим билетом!</p>
+		</div>
+	</section>
+	<section class="pay-for-emotions-block">
+		<div class="container">
+			<h2>ОПЛАТИ ПОЛУЧЕННЫЕ ЭМОЦИИ</h2>
+			<div class="button-div">
+				<a class="link-button" href="http://mfilyaev.com/payment.html">Оплатить</a>
+			</div>
 		</div>
 	</section>
 	<section class="place-section">
-		<div>
+		<div class="container">
 			<h2>МЕСТО ПРОВЕДЕНИЯ</h2>
 			<div class="flex-center-row">
 				<div>
