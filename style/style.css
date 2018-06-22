@@ -26,13 +26,16 @@ i{
 }
 .link-button{
 	font-family: 'Montserrat', sans-serif;
-	border: 2px solid #36d999;
+    border: 2px solid #36d999;
     background-color: #36d999;
     color: white;
+    box-sizing: border-box;
     text-decoration: none;
-	font-size: 24px;
+    width: 360px;
+    text-align: center;
+    font-size: 24px;
     font-weight: 500;
-    padding: 10px 70px;
+    padding: 13px 70px;
     border-radius: 50px;
     cursor: pointer;
     transition: .3s;
@@ -544,9 +547,6 @@ i{
 	justify-content: center;
 	align-items: center;
 	box-sizing: border-box;
-	/*width: 100px;
-	height: 100%;*/
-	/*background: lightgray;*/
 }
 .payment-cell {
 	height: 280px;
@@ -577,17 +577,17 @@ i{
     align-items: center;
 }
 .payment-cell form input {
-	width: 270px;
-	font-size: 15px;
-	padding: 15px;
-	margin-bottom: 6.5px;
-	border: none;
+	box-sizing: border-box;
+    width: 360px;
+    font-size: 15px;
+    padding: 15px;
+    margin-bottom: 14.5px;
+    border: none;
 }
 .payment-cell form button {
 	margin-top: 17px;
-	/*margin-top: 38px;*/
-	border-radius: 50px;
-	outline: none;
+    border-radius: 50px;
+    outline: none;
 }
 .payment-cell .button-div {
 	margin-top: 25px;
@@ -733,7 +733,6 @@ footer h2 {
 				font-size: 26px;
 			}
 			.link-button {
-			    padding: 20px 100px;
 			    margin: 5px 0 5px;
 			}
 			.what-would-you-get-section li img {
@@ -813,6 +812,9 @@ footer h2 {
 				    width: 70%;
 				}
 				@media (max-width: 853px) {
+					.container {
+					    margin: 0 20px;
+					}
 					.autor-section {
 					    background-position: 70% 70%;
 					}
@@ -820,11 +822,11 @@ footer h2 {
 					    width: 90%;
 					}
 					@media (max-width: 683px) {
-						section > div {
-						    margin: 0 10px;
-						}
 						.slider-block {
-						    width: 100vw;
+						    width: 99vw;
+						}
+						.slick-prev, .slick-next {
+							display: none;
 						}
 						.slider-block  > div > div {
 							height: 50vw;
@@ -941,8 +943,7 @@ footer h2 {
 }
 .payment-btns {
     box-sizing: border-box;
-    padding: 20px;
-    /*padding: 10px;*/
+    padding: 13px 0px;
     width: 350px;
     text-align: center;
 }
