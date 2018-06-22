@@ -2,12 +2,12 @@
 body{ 
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
-	color: #333333;
+	color: #333;
 }
 section>div>h1, section>div>h2, section>div>h3, section>div>h4, section>div>h5, section>div>h6{
 	margin:  20px 0 60px ;
 }
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3{
 	text-align: center;
 }
 h2 {
@@ -131,7 +131,8 @@ i{
 .header {
 	margin: 0 0 0 50%;
 }
-.header h3 {
+.header h2 {
+	font-size: 21px;
 	margin: 10px 0 ;
 }
 .header p {
@@ -534,6 +535,7 @@ i{
     margin-bottom: 60px;
 }
 .event-payments{
+	color: #555;
 	width: 100%;
 	background: #bdeee9;
 }
@@ -549,6 +551,7 @@ i{
 .payment-cell {
 	height: 280px;
 	width: 48%;
+	min-width: 452px;
 }
 .payment-cell:last-child{
     display: flex;
@@ -556,16 +559,12 @@ i{
     justify-content: space-between;
 }
 .payment-cell ul {
-	width: 65%;
+	width: 280px;
     margin: 0 auto;
-    list-style-type: none;
 }
 .payment-cell ul li{
-	font-family: Montserrat;
-	color:  #555555;
 	font-size: 20px;
 	font-weight: 500;
-	text-align: justify;
 }
 .payment-cell h3 {
 	margin-top: 0;
@@ -585,19 +584,14 @@ i{
 	border: none;
 }
 .payment-cell form button {
-	margin-top: 15px;
+	margin-top: 17px;
+	/*margin-top: 38px;*/
 	border-radius: 50px;
 	outline: none;
 }
 .payment-cell .button-div {
 	margin-top: 25px;
 	margin-bottom: 0;
-}
-.payment-btns {
-    margin: 0 !important;
-    padding: 20px !important;
-    width: 350px !important;
-    text-align: center !important;
 }
 
 
@@ -690,10 +684,11 @@ footer h2 {
 		.payments-block {
 			flex-direction: column;
 		}
-		.payment-cell {
-		    height: none; 
+		.payment-cell { 
 		    width: 60%;
-		    margin-bottom: 20px;
+		}
+		.payment-cell:first-child {
+		    margin-bottom: 100px;
 		}
 		@media only screen and (max-width: 1024px) {
 			.menu{
@@ -943,4 +938,11 @@ footer h2 {
 			}
 		}
 	}
+}
+.payment-btns {
+    box-sizing: border-box;
+    padding: 20px;
+    /*padding: 10px;*/
+    width: 350px;
+    text-align: center;
 }
