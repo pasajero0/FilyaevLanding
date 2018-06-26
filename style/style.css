@@ -675,7 +675,39 @@ footer h2 {
 	font-weight: 800;
     font-size: 20px;
 }
-
+/*-------------------------------------------------------------------- success-error pages*/
+.success-error {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.success {
+	background: #bcede8;
+}
+.error {
+	background: #f2f2f2;
+}
+.success-error-title {
+	color: #333;
+	font-weight: 800;
+	font-size: 26pt;	
+}
+.success-error-info {
+	text-align: center;
+	margin-top: 0;
+	color: #333;
+	font-weight: 600;
+	font-size: 22pt;
+}
+.success-error .button-div {
+	margin-top: 80px;
+}
+.success-error .link-button {
+	width: 380px;
+}
 /*-------------------------------------------------------------------- АДАПТИВНОСТЬ ЭКРАНА*/
 @media only screen and (max-width: 1140px) {
 	.show-section > div > div > div{
